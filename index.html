@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="centered-container">
+      <img id="alarm-image" class='' src="alarm-ring.svg" alt="Description of the image" style="display: none;">
+      <h1>Timer: <span id="timer-count">0</span></h1>
+    </div>
+    <div class="timeInputContainer">
+      <div class="timeInput">
+        <input type="number" id="hours" placeholder="HH" min="0">
+        <span>:</span>
+        <input type="number" id="minutes" placeholder="MM" min="0">
+        <span>:</span>
+        <input type="number" id="seconds" placeholder="SS" min="0">
+      </div>
+      <div class="buttonContainer">
+        <button id="set-timer-button">Set Timer</button>
+        <button id="stop-timer-button">Stop Timer</button>
+      </div>
+    </div>
+    <audio id="audio">
+      <source src="ring.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
